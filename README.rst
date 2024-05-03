@@ -14,15 +14,25 @@ Newspaper3k: Article scraping & curation
         :alt: Coverage status
 
 
-Inspired by `requests`_ for its simplicity and powered by `lxml`_ for its speed:
+Newspaper is a Python library for developers that is used for extracting media and text from the HTML of online news articles. 
+You can also use it to extract article elements such as authors, publish date, embedded videos, etc. 
 
-    "Newspaper is an amazing python library for extracting & curating articles."
-    -- `tweeted by`_ Kenneth Reitz, Author of `requests`_
+Inspired by `requests`_ for its simplicity and powered by `lxml`_ for its speed.
 
-    "Newspaper delivers Instapaper style article extraction." -- `The Changelog`_
+Features
+--------
 
-.. _`tweeted by`: https://twitter.com/kennethreitz/status/419520678862548992
-.. _`The Changelog`: http://thechangelog.com/newspaper-delivers-instapaper-style-article-extraction/
+- Multi-threaded article download framework
+- News url identification
+- Text extraction from html
+- Top image extraction from html
+- All image extraction from html
+- Keyword extraction from text
+- Summary extraction from text
+- Author extraction from text
+- Google trending terms extraction
+- Works in 10+ languages (English, Chinese, German, Arabic, ...)
+
 
 **Newspaper is a Python3 library**! Or, view our **deprecated and buggy** `Python2 branch`_
 
@@ -174,19 +184,6 @@ Check out `The Docs`_ for full and detailed guides using newspaper.
 
 Interested in adding a new language for us? Refer to: `Docs - Adding new languages <https://newspaper.readthedocs.io/en/latest/user_guide/advanced.html#adding-new-languages>`_
 
-Features
---------
-
-- Multi-threaded article download framework
-- News url identification
-- Text extraction from html
-- Top image extraction from html
-- All image extraction from html
-- Keyword extraction from text
-- Summary extraction from text
-- Author extraction from text
-- Google trending terms extraction
-- Works in 10+ languages (English, Chinese, German, Arabic, ...)
 
 .. code-block:: pycon
 
@@ -301,7 +298,7 @@ NOTE: You will still most likely need to install the following libraries via you
     $ pip3 install newspaper3k
 
     $ curl https://raw.githubusercontent.com/codelucas/newspaper/master/download_corpora.py | python3
-
+    
 Donations
 ---------
 
